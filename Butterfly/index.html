@@ -85,8 +85,8 @@ function resizeText() {
 
   <h1 class="large home-go">Home</h1>
   <h1 class="large products-go">Products</h1>
-  <h1 class="large">Videos</h1>
-  <h1 class="smaller">Inside</h1>
+  <h1 class="large videos-go">Videos</h1>
+  <h1 class="smaller inside-go ">Inside</h1>
   <h1 class="smaller">Events</h1>
   <h1 class="smaller">Contact</h1>
 
@@ -632,12 +632,19 @@ Lilburn, Ga 30047 </span> </div>
     $(".products-go").click(function(){
        window.location.href = "products.html"
     });
+    $(".videos-go").click(function(){
+        window.location.href = "videos.html"
+    });
+    $(".inside-go").click(function(){
+        window.location.href = "inside.html"
+    });
     $(".home-go").click(function(){
         $(".home-go").addClass("jump");
         setTimeout(function(){
             $(".home-go").removeClass("jump");
         },300);
     });
+
     $(".show-large").click(function(){
 
     });
