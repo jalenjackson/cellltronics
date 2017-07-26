@@ -63,9 +63,9 @@
     <h1 class="large home-go">Home</h1>
     <h1 class="large products-go">Products</h1>
     <h1 class="large videos-go">Videos</h1>
-    <h1 class="smaller">Inside</h1>
-    <h1 class="smaller">Events</h1>
-    <h1 class="smaller">Contact</h1>
+    <h1 class="smaller inside-go">Inside</h1>
+    <h1 class="smaller events-go">Events</h1>
+    <h1 class="smaller contact-go">Contact</h1>
 
     <div class="side-side-nav">
 
@@ -829,16 +829,22 @@
     });
 
     $(".home-go").click(function(){
-       window.location.href = "index.html"
+        window.location.href = "index.html";
     });
     $(".products-go").click(function(){
-        $(".products-go").addClass("jump");
-        setTimeout(function(){
-            $(".home-go").removeClass("jump");
-        },300);
+        window.location.href = "products.html";
     });
     $(".videos-go").click(function(){
-        window.location.href = "videos.html"
+        window.location.href = "videos.html";
+    });
+    $(".inside-go").click(function(){
+        window.location.href = "inside.html";
+    });
+    $(".events-go").click(function(){
+        window.location.href = "events.html";
+    });
+    $(".contact-go").click(function(){
+        window.location.href = "contact.html";
     });
 
     function adjustHeightOfPage(pageNo) {

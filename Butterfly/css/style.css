@@ -397,6 +397,11 @@ side-nav h1 {
 	animation: jump 400ms ease-in-out;
 }
 
+.sub-title {
+	font-size: 12px;
+	font-family:Questrial,sans-serif;
+}
+
 @keyframes jump {
 	0%{
 		font-size: 50px;
@@ -410,11 +415,20 @@ side-nav h1 {
 
 }
 
+.display-change {
+	display: block;
+}
 .top_cont_inner{
 	background:url(https://s-media-cache-ak0.pinimg.com/originals/69/f9/e9/69f9e9afdabacb960185c5aaea3af619.gif) no-repeat center center;
 	background-size: 100% 100%;
 	background-attachment: fixed;
 	}
+
+.second_cont_inner {
+	background:url(http://www.myoilandgascareer.com/media/journey/gaming.gif) no-repeat center center !important;
+	background-size: 100% 100% !important;
+	background-attachment: fixed;
+}
 
 .top_content{
 	position:relative;

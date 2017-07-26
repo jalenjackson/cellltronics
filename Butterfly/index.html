@@ -74,7 +74,7 @@ function resizeText() {
 <header id="header_outer">
   <div class="container">
     <div class="header_section">
-      <h1 class="logo">Cellltronics&reg;</h1>
+      <h1 class="logo">Cellltronics&reg; <span class="sub-title">phone and computer repair, internet cafe and gaming lounge.</span></h1>
 
 
       <a class="res-nav_click animated wobble wow"  href="javascript:void(0)"><i class="fa-bars"></i></a> </div>
@@ -87,8 +87,8 @@ function resizeText() {
   <h1 class="large products-go">Products</h1>
   <h1 class="large videos-go">Videos</h1>
   <h1 class="smaller inside-go ">Inside</h1>
-  <h1 class="smaller">Events</h1>
-  <h1 class="smaller">Contact</h1>
+  <h1 class="smaller events-go">Events</h1>
+  <h1 class="smaller contact-go">Contact</h1>
 
   <div class="side-side-nav">
 
@@ -109,7 +109,7 @@ function resizeText() {
                 <div class="line-animation">
                 </div>
               </div>
-              <p style="margin-top:20px; color:rgba(240,240,240,0.7);"> Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum. </p>
+              <p style="margin-top:20px; color:white;">Come and enjoy our internet cafe and gaming lounge!</p>
           </div>
           <div class="col-lg-7 col-sm-5"> </div>
         </div>
@@ -118,12 +118,34 @@ function resizeText() {
   </div>
 </section>
 
+<section  class="top_cont_outer">
+  <div class="top_cont_inner second_cont_inner">
+    <div class="container">
+      <div class="top_content">
+        <div class="row">
+          <div class="col-lg-5 col-sm-7">
+            <div class="top_left_cont  wow animated">
+              <h2 style="color:white" class="parallax">Or Come Play At Our Gaming Lounge
+              </h2>
+              <div class="line">
+                <div class="line-animation">
+                </div>
+              </div>
+              <p style="margin-top:20px; color:white;">Come and enjoy our internet cafe and gaming lounge!</p>
+            </div>
+            <div class="col-lg-7 col-sm-5"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
 <!--Top_content-->
 
 <!--Service-->
 <section  id="service">
   <div class="container">
-    <h2 class="services parallax">Services</h2>
+    <h2 class="services ">Services</h2>
     <div class="service_area">
       <div class="row">
         <div class="col-lg-4">
@@ -629,14 +651,29 @@ Lilburn, Ga 30047 </span> </div>
 </footer>
 <script type="text/javascript">
 
+
+
+
+
+
+
+    $(".home-go").click(function(){
+        window.location.href = "index.html";
+    });
     $(".products-go").click(function(){
-       window.location.href = "products.html"
+        window.location.href = "products.html";
     });
     $(".videos-go").click(function(){
-        window.location.href = "videos.html"
+        window.location.href = "videos.html";
     });
     $(".inside-go").click(function(){
-        window.location.href = "inside.html"
+        window.location.href = "inside.html";
+    });
+    $(".events-go").click(function(){
+        window.location.href = "events.html";
+    });
+    $(".contact-go").click(function(){
+        window.location.href = "contact.html";
     });
     $(".home-go").click(function(){
         $(".home-go").addClass("jump");
@@ -651,9 +688,9 @@ Lilburn, Ga 30047 </span> </div>
 
     $(".nav").click(function(){
        $(".logo").toggleClass("changeColor");
+       $(".sub-title").toggleClass("display-change");
        $(".side-nav").toggleClass("side-nav-width")
-        $(".side-side-nav").toggleClass("side-side-nav-width");
-
+       $(".side-side-nav").toggleClass("side-side-nav-width");
     });
 
 
@@ -851,5 +888,7 @@ $( window ).load(function() {
 	return false;
 });
 </script>
+
+
 </body>
 </html>

@@ -72,9 +72,9 @@
     <h1 class="large home-go">Home</h1>
     <h1 class="large products-go">Products</h1>
     <h1  class="large videos-go">Videos</h1>
-    <h1 class="smaller">Inside</h1>
-    <h1 class="smaller">Events</h1>
-    <h1 class="smaller">Contact</h1>
+    <h1 class="smaller inside-go">Inside</h1>
+    <h1 class="smaller events-go">Events</h1>
+    <h1 class="smaller contact-go">Contact</h1>
 
     <div class="side-side-nav">
 
@@ -504,13 +504,22 @@
 <script>
 
     $(".home-go").click(function(){
-       window.location.href = "index.html";
+        window.location.href = "index.html";
     });
     $(".products-go").click(function(){
         window.location.href = "products.html";
     });
     $(".videos-go").click(function(){
         window.location.href = "videos.html";
+    });
+    $(".inside-go").click(function(){
+        window.location.href = "inside.html";
+    });
+    $(".events-go").click(function(){
+        window.location.href = "events.html";
+    });
+    $(".contact-go").click(function(){
+        window.location.href = "contact.html";
     });
 
     $(".first-video").hide();
@@ -524,14 +533,32 @@
 
     });
 
+
+    var video1 = $(".first-video").attr("src");
+    var video2 = $(".second-video").attr("src");
+    var video3 = $(".third-video").attr("src");
+    var video4 = $(".fourth-video").attr("src");
+
+
     $(".move-over").click(function(){
         $(".iframe-player").fadeOut("slow");
         $(".first-video").fadeOut("slow");
         $(".nav").fadeIn("slow");
+
+
+        $('.first-video').attr("src", "");
+        $('.second-video').attr("src", "");
+        $('.third-video').attr("src", "");
+        $('.fourth-video').attr("src", "");
+
+
     });
+
+
     $(".video1").click(function(){
         $(".iframe-player").show();
-        $(".first-video").fadeIn("slow");
+
+        $(".first-video").fadeIn("slow").attr("src",video1);
         $(".second-video").hide();
         $(".third-video").hide();
         $(".fourth-video").hide();
@@ -543,7 +570,7 @@
 
         $(".iframe-player").show();
         $(".first-video").hide();
-        $(".second-video").fadeIn("slow");
+        $(".second-video").fadeIn("slow").attr("src",video2);
         $(".third-video").hide();
         $(".fourth-video").hide();    });
     $(".video3").click(function(){
@@ -552,7 +579,7 @@
         $(".iframe-player").show();
         $(".first-video").hide();
         $(".second-video").hide();
-        $(".third-video").fadeIn("slow");
+        $(".third-video").fadeIn("slow").attr("src",video3);
         $(".fourth-video").hide();    });
     $(".video4").click(function(){
         $(".nav").hide();
@@ -561,7 +588,7 @@
         $(".first-video").show();
         $(".second-video").hide();
         $(".third-video").hide();
-        $(".fourth-video").fadeIn("slow");    });
+        $(".fourth-video").fadeIn("slow").attr("src",video4);    });
 
     $(".nav").click(function(){
         $(".logo").toggleClass("changeColor");
